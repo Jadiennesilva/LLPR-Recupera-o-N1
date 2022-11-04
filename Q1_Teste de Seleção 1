@@ -27,6 +27,8 @@ int main() {
   	
     printf("Valores nao aceitos\n");
 }
+
+  system("pause");
     
     return 0;
 }
