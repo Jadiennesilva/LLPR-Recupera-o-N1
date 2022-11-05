@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main() {
+    
+    int vi, vf;
+    
+  printf("Digite o valor inicial: \n");
+  scanf("%d", &vi);
+  printf("Digite o valor final: \n");
+  scanf("%d", &vf);
+  
+  if(vi < vf){
+      printf("O JOGO DUROU %d HORA(S)\n",vf - vi);
+  }else{
+       printf("O JOGO DUROU %d HORA(S)\n",24-vi + vf);
+  }
+ 
+    return 0;
+}
