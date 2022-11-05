@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+ 
+int main() {
+	
+	setlocale(LC_ALL, "Portuguese_Brazil");
+ 
+    double A,B,C, MAIOR ,PEQUENO, METADE;
+    
+    printf("Leia o valor A: \n");
+    scanf("%lf",&A);
+    printf("Leia o valor B: \n");
+    scanf("%lf",&B);
+    printf("Leia o valor C: \n");
+    scanf("%lf",&C);
+    
+    if(A >= B && A >= C){
+    	
+    	MAIOR = A;
+    	METADE = B;
+    	PEQUENO = C;
+	}
+	
+	if(B >= A && B >= C){
+		MAIOR = B;
+    	METADE = A;
+        PEQUENO = C;	
+	}
+    
+    else{
+    	
+    
+    	MAIOR = C;
+    	METADE = A;
+    	PEQUENO = B;	
+}
+    
+    if(MAIOR >= METADE + PEQUENO){
+    printf("NAO FORMA TRIANGULO\n");
+} else{
+	
+
+	
+
+	if(MAIOR*MAIOR == METADE*METADE  + PEQUENO*PEQUENO){
+    printf("TRIANGULO RETANGULO\n");
+}
+
+	
+	
+	if(MAIOR*MAIOR > METADE*METADE  + PEQUENO*PEQUENO){
+    printf("TRIANGULO OBTUSANGULO\n");
+}
+	
+	
+	if(MAIOR*MAIOR < METADE*METADE  + PEQUENO*PEQUENO){
+    printf("TRIANGULO ACUTANGULO\n");
+}
+	
+	if(MAIOR == METADE &&  MAIOR == PEQUENO){
+    	printf("TRIANGULO EQUILATERO\n");
+	}
+	
+	
+	
+      if(MAIOR == METADE &&  MAIOR != PEQUENO && PEQUENO !=METADE){
+    	printf("TRIANGULO ISOSCELES\n");
+	}
+		
+	
+		if(METADE == PEQUENO &&  MAIOR != METADE && MAIOR !=PEQUENO){
+    	printf("TRIANGULO ISOSCELES\n");
+	}
+	
+	
+		if(MAIOR == PEQUENO &&  PEQUENO != METADE && MAIOR !=METADE){
+    	printf("TRIANGULO ISOSCELES\n");
+	}
+	
+	}
+	
+	
+	system("pause");
+	
+    return 0;
+}
