@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	
+	setlocale(LC_ALL, "Portuguese_Brazil");
+    
+  
+    float n1,n2,n3,n4,av1,media,exame,avf;
+    
+    printf("digite o numero da n1: \n");
+    scanf("%f",&n1);
+    printf("digite o numero da n2: \n");
+    scanf("%f",&n2);
+    printf("digite o numero da n3: \n");
+    scanf("%f",&n3);
+    printf("digite o numero da n4: \n");
+    scanf("%f",&n4);
+    
+    
+    media = (n1 * 2 + n2 * 3 + n3 * 4 + n4) / 10;
+    
+
+    printf("Media: %.1f\n", media);
+    
+    if (media >= 7.0){
+        printf("Aluno aprovado.\n");
+}
+    if (media < 5.0){
+        printf("Aluno reprovado.\n");
+}
+    
+    if((5 <= media) && (media < 7)){
+        printf("Aluno em exame.\n");
+        scanf("%f",&exame);
+        printf("Nota do exame: %.1f\n",exame);
+        avf = (media + exame)/2;
+        
+        if(avf >= 5){
+        printf("Aluno aprovado.\n");
+        printf("Media final: %.1f\n", avf);	
+}
+		
+		if(avf<= 4.9){
+		printf("Aluno reprovado.\n");
+        printf("Media final: %.1f\n", avf);
+			
+	}
+}
+    
+     system("pause");
+       return 0;
+}
