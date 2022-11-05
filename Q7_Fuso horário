@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int s, t, f, ans;
+    
+    printf("Digite o valor s: \n");
+    scanf("%d",&s);
+    printf("Digite o valor t: \n");
+    scanf("%d", &t);
+    printf("Digite o valor f: \n");
+    scanf("%d",&f);
+    
+    ans = s+t+f;
+    
+    if(ans < 0) ans = 24 + ans;
+    
+    printf("%d\n",ans%24);
+    
+    return 0;
+}
+ 
