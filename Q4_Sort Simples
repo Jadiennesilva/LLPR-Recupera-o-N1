@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+ 
+int main() {
+ 	setlocale(LC_ALL, "Portuguese_Brazil");
+ 
+   int j1,j2,j3;
+   
+   printf("Digite o valor j1: \n");
+   scanf("%d",&j1);
+   printf("Digite o valor j2: \n");
+   scanf("%d",&j2);
+   printf("Digite o valor j3: \n");
+   scanf("%d",&j3);
+   
+    if(j1< j2 && j2 < j3){
+        
+       printf("%d\n", j1);
+       printf("%d\n", j2);
+       printf("%d\n", j3);
+    }
+  
+  if(j1 < j3 && j3 < j2){
+    printf("%d\n", j1);
+    printf("%d\n", j3);
+    printf("%d\n", j2);
+      
+    	}
+    	
+  
+  	if(j2 < j1 && j1 < j3){
+  	printf("%d\n", j2);
+    printf("%d\n", j1);
+    printf("%d\n", j3);
+}
+
+    if(j2 < j3 && j3 < j1){
+    printf("%d\n", j2);
+    printf("%d\n", j3);
+    printf("%d\n", j1);
+    				
+}
+
+	if(j3 < j1 && j1 < j2){
+	printf("%d\n", j3);
+    printf("%d\n", j1);
+    printf("%d\n", j2);
+
+}
+	if(j3 < j2 && j2 < j1){
+	printf("%d\n", j3);
+    printf("%d\n", j2);
+    printf("%d\n", j1);
+}
+    printf("\n");
+    
+	printf("%d\n",j1);
+	printf("%d\n",j2);
+	printf("%d\n",j3);
+  
+  
+  
+ 
+   system("pause");
+    return 0;
+}
